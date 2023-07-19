@@ -1,6 +1,6 @@
 let app = new Vue({
-    el: '#app',             // 関連付けるDOM要素
+    el: '#app',
     data: {
-        opGroup: ["a1", "b22", "c333"]
+        opGroup: ["a", "b", "c"]
     }
   });

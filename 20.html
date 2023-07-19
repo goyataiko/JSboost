@@ -7,20 +7,10 @@
 <body>
     <form>
         <select name="test" id="app">
-            <option v-for="op in opGroup">
+            <option v-for="op in opGroup" :value="op">
                 {{ op }}
             </option>
-            <!-- <option value="a">a</option>
-            <option value="b">b</option>
-            <option value="c">c</option> -->
-        </select>
-        
-        <ul id="app1">
-          <li v-for="m in msgs1">
-          {{ m }}
-          </li>
-        </ul>
-  
+        </select>  
     </form>  
 
 
