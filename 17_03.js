@@ -29,14 +29,14 @@ $(function () {
       .done(function(res) {
           if (res.status == 200) {                    //　処理が成功したとき
                   //該当する住所を表示
-                  // console.log(res)
+                  console.log(res)
                   let html = '';
-                  for (let i = 0; i < res.results.length; i++) {
-                    let r = res.results[i];
-                    console.log(r);                   // 取得した値を確認
-                    html += '<h3>住所' + (i + 1) + '</h3>';
-                    html += htmlString(r.prefcode, r.address1, r.address2, r.address3, r.kana1, r.kana2);
-                  }
+                  
+                  let r = res.results[0];
+                  console.log(r);                   // 取得した値を確認
+                  html += '<h3>住所</h3>';
+                  html += htmlString(r.prefcode, r.address1, r.address2, r.address3, r.kana1, r.kana2);
+                  
                   $('#zip_result').html(html);
           } else {
               //エラーの場合
