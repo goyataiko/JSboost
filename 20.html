@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <form>
+        <select name="test" id="app">
+            <option v-for="op in opGroup">
+                {{ op }}
+            </option>
+            <!-- <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option> -->
+        </select>
+        
+        <ul id="app1">
+          <li v-for="m in msgs1">
+          {{ m }}
+          </li>
+        </ul>
+  
+    </form>  
+
+
+  <script src="20.js" charset="UTF-8"></script>
+</body>
+</html>
