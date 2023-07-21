@@ -16,10 +16,12 @@ $(function () {
     })
     .done(function (res) {
       // 成功した場合
-      console.log(res.core);        // レスポンスフィールドの内容
+      console.log(res);        // レスポンスフィールドの内容
       $('#apod-image').attr('src', res.url);
       $('#apod-title').html(res.title);
       $('#apod-desc').html(res.explanation);
+      $('#apod-copyright').html(res.copyright);
+      $('#apod-date').html(res.date);
     })
     .fail(function (res) {
       // 失敗した場合
