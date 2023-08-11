@@ -4,7 +4,7 @@
     constructor(props) {
       super(props);
       // 状態を保持するプロパティstate
-      this.state = { count : 3 };
+      this.state = { count : 100 };
     }
 
     //　出力処理
@@ -16,7 +16,7 @@
             if (this.state.count !== 0) {
                 this.setState({ count : this.state.count - 1 });
             } else {
-                this.setState({ count : 3 });
+                this.setState({ count : 100 });
             }
         }},
         "カウント数：" + this.state.count
